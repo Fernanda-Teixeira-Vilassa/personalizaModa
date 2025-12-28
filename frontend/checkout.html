@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Personaliza Moda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Personaliza Moda</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="checkout-container">
+      <h2>Checkout</h2>
+
+      <div class="resumo" id="resumo">
+        <h3>Resumo do Pedido</h3>
+        <!-- Lista de produtos -->
+      </div>
+
+      <form id="checkoutForm">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" required>
+
+        <label for="pagamento">Forma de Pagamento:</label>
+        <select id="pagamento" required>
+          <option value="pix">Pix</option>
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="boleto">Boleto</option>
+        </select>
+
+        <button type="submit">Finalizar Pedido</button>
+      </form>
+    </div>
+  </main>
+<script src="js/main.js"></script>
+</body>
+</html>

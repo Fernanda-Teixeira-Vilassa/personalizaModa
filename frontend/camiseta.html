@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto - Personaliza Moda</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Personaliza Moda</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produto-detalhe">
+      <div class="produto-imagem">
+        <img id="produto-img" src="https://via.placeholder.com/300x300" alt="Produto">
+      </div>
+      <div class="produto-info">
+        <h2 id="produto-nome">Camiseta #MulheresViva</h2>
+        <p id="produto-preco">R$ 79,90</p>
+        <p id="produto-desc">Escolha a cor, tamanho e a estampa da sua camiseta.</p>
+
+        <form id="customForm">
+          <!-- Tamanho -->
+          <label for="tamanho">Tamanho:</label>
+          <select id="tamanho" required>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+          </select>
+
+          <!-- Cor da camiseta -->
+          <label for="cor">Cor da Camiseta:</label>
+          <select id="cor" required>
+            <option value="Branco">Branco</option>
+            <option value="Preto">Preto</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Azul">Azul</option>
+            <option value="Roxo">Roxo</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Verde">Verde</option>
+          </select>
+
+          <!-- Galeria de estampas -->
+          <label>Escolha a Estampa:</label>
+          <div class="estampas-container" id="estampasContainer">
+            <div class="estampa-item"><img src="images/estampa1.png" alt="Estampa 1" data-value="estampa1.png"></div>
+            <div class="estampa-item"><img src="images/estampa2.png" alt="Estampa 2" data-value="estampa2.png"></div>
+            <div class="estampa-item"><img src="images/estampa3.png" alt="Estampa 3" data-value="estampa3.png"></div>
+            <div class="estampa-item"><img src="images/estampa4.png" alt="Estampa 4" data-value="estampa4.png"></div>
+            <div class="estampa-item"><img src="images/estampa5.png" alt="Estampa 5" data-value="estampa5.png"></div>
+            <div class="estampa-item"><img src="images/estampa6.png" alt="Estampa 6" data-value="estampa6.png"></div>
+          </div>
+
+          <!-- Upload de estampa própria -->
+          <label for="estampaUpload">Ou faça upload da sua estampa:</label>
+          <input type="file" id="estampaUpload" accept="image/*">
+
+          <!-- Quantidade -->
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" min="1" value="1" required>
+
+          <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  
+</body>
+</html>

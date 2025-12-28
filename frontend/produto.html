@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto - Personaliza Moda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Personaliza Moda</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produto-detalhe">
+      <div class="produto-imagem">
+        <img id="produto-img" src="images/camiseta-feminino-100-algodao-baby-look.png" alt="Camisa Personalizada">
+      </div>
+      <div class="produto-info">
+        <h2 id="produto-nome">Camisa Personalizada</h2>
+        <p id="produto-preco">R$ 79,90</p>
+        <p id="produto-desc">Descrição do produto vai aqui. Personalize como desejar!</p>
+
+        <form id="customForm">
+          <label for="tamanho">Tamanho:</label>
+          <select id="tamanho" required>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+          </select>
+
+          <label for="cor">Cor:</label>
+          <select id="cor" required>
+            <option value="Branco">Branco</option>
+            <option value="Preto">Preto</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Azul">Azul</option>
+          </select>
+
+          <label for="bordado">Texto Bordado (opcional):</label>
+          <input type="text" id="bordado" placeholder="Digite seu texto">
+
+          <label for="croche">Cor do Crochê / Vagonite:</label>
+          <select id="croche">
+            <option value="">Nenhuma</option>
+            <option value="Bege">Bege</option>
+            <option value="Marrom">Marrom</option>
+            <option value="Verde">Verde</option>
+            <option value="Rosa">Rosa</option>
+          </select>
+
+          <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
